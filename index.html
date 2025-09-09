@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echoes</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="p-[0_100px] bg-[#111] border-b border-[#938e97] relative">
+      <div
+        class="flex items-center justify-between max-w-[1440px] w-full h-[80px]"
+      >
+        <a href="./index.html" class="text-white font-bold text-xl">
+          <img src="./images/Logo.svg" alt="Logo" class="h-8" />
+        </a>
+        <input type="checkbox" id="checked" class="peer hidden" />
+        <label
+          for="checked"
+          class="md:hidden text-2xl text-white cursor-pointer z-50"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav
+          class="hidden peer-checked:flex flex-col gap-4 absolute top-full left-0 w-full bg-[#111] p-6 md:flex md:static md:flex-row md:w-auto md:bg-transparent md:p-0"
+        >
+          <label
+            for="checked"
+            class="md:hidden self-end cursor-pointer text-white text-2xl"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+
+          <ul class="flex flex-col md:flex-row gap-6">
+            <li>
+              <a
+                href="#"
+                class="font-bold text-lg text-white hover:text-gray-300"
+              >
+                La Formation
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold text-lg text-white hover:text-gray-300"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold text-lg text-white hover:text-gray-300"
+              >
+                Case Studies
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="hero flex items-start bg-[radial-gradient(circle_at_right,_#3b167a,_#0a0a0a_70%)]"
+      >
+        <div
+          class="container hero-inner flex flex-col items-center gap-6 w-full max-w-[1440px] px-5 pt-12 pb-10 sm:px-8 sm:pt-16 md:px-12 md:pt-20 lg:flex-row lg:justify-center lg:gap-10 lg:px-24 lg:pt-[130px] lg:pb-[100px] lg:h-[742px]"
+        >
+          <div class="hero-text d">
+            <h1
+              class="font-bold text-3xl leading-tight tracking-tight text-white font-manrop sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+            >
+              Créez un podcast <br />
+              pour développer <br />
+              votre
+              <span class="font-permanent text-primary">acquisition</span>
+            </h1>
+            <p
+              class="mt-6 font-semibold text-base leading-relaxed text-white font-inter sm:text-lg md:text-xl lg:text-2xl xl:text-[32px]"
+            >
+              Echoes vous forme et vous <br />
+              accompagne pour faire grandir <br />
+              une communauté engagée.
+            </p>
+            <button
+              class="mt-8 w-[140px] h-[46px] rounded-[32px] bg-[#7748ef] font-bold text-sm leading-[144%] text-center text-white font-public transition-all duration-300 hover:bg-[#5f4cd997] hover:shadow-lg sm:w-[150px] sm:h-[50px] sm:text-base md:w-[160px] md:h-[54px] md:text-base lg:w-[169px] lg:h-16 lg:text-lg"
+            >
+              Commencer
+            </button>
+          </div>
+
+          <div
+            class="mt-8 max-w-[240px] w-full bg-[#e6ddcc] rounded-[24px] relative sm:max-w-[280px] md:max-w-[320px] md:mt-10 lg:max-w-[360px] lg:h-[512px] lg:mt-0"
+          >
+            <div
+              class="hero-img bg-[url('/images/image6.svg')] rounded-tl-[20px] rounded-tr-[20px] bg-cover bg-center w-full h-[200px] sm:h-[240px] md:h-[260px] lg:h-[320px]"
+            >
+              <button
+                class="relative mt-4 flex items-center gap-2 mx-auto w-[180px] h-[50px] backdrop-blur-[24px] px-4 py-2 rounded-[32px] bg-[rgba(255,255,255,0.72)] sm:w-[200px] sm:h-[56px] md:w-[220px] lg:absolute lg:top-[28%] lg:right-[60px] lg:mt-0 lg:w-[233px] lg:h-16"
+              >
+                <h1
+                  class="font-bold text-sm text-center text-black font-inter sm:text-base md:text-lg"
+                >
+                  Écouter le Pitch
+                </h1>
+                <img
+                  src="./images/play-circle.svg"
+                  alt=""
+                  class="w-5 h-5 sm:w-6 sm:h-6"
+                />
+              </button>
+            </div>
+            <div>
+              <h2
+                class="mt-4 font-bold text-sm leading-[133%] text-center text-black font-inter sm:mt-6 sm:text-base md:text-lg lg:mt-[30px]"
+              >
+                Xavier et Jérémy vous présentent Echoes, et vous donnent les
+                clés du succès.
+              </h2>
+              <p
+                class="mt-2 font-bold text-xs leading-[171%] text-center text-[#857b68] font-inter sm:mt-4 sm:text-sm"
+              >
+                1min24
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="trust bg-[#000] px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:px-0 lg:py-[100px]"
+      >
+        <div
+          class="container1 max-w-[1440px] mx-auto flex flex-col items-center gap-10"
+        >
+          <h1
+            class="font-bold text-3xl leading-snug text-center text-white font-manrop sm:text-4xl md:text-5xl lg:text-[54px] lg:leading-[111%] mb-8 lg:mb-[30px]"
+          >
+            Rejoignez les nombreux créateurs <br />
+            qui nous ont fait confiance
+          </h1>
+
+          <div
+            class="trust-logos overflow-y-auto scrollbar-custom flex items-center gap-5 p-2 pb-10 sm:gap-6 sm:pb-12 md:gap-8 lg:gap-[20px] lg:pb-10"
+          >
+            <img src="./images/Rectangle 2.svg" alt="" />
+            <img src="./images/Rectangle 3.svg" alt="" />
+            <img src="./images/Rectangle 4.svg" alt="" />
+            <img src="./images/Rectangle 5.svg" alt="" />
+            <img src="./images/Rectangle 6.svg" alt="" />
+            <img src="./images/Rectangle 7.svg" alt="" />
+            <img src="./images/Rectangle 8.svg" alt="" />
+            <img src="./images/Rectangle 9.svg" alt="" />
+            <img src="./images/Frame 120.svg" alt="" />
+            <img src="./images/Frame 119.svg" alt="" />
+            <img src="./images/Frame 123.svg" alt="" />
+            <img src="./images/Frame 124.svg" alt="" />
+            <img src="./images/Frame 121.svg" alt="" />
+            <img src="./images/Frame 122.svg" alt="" />
+            <img src="./images/Frame 125.svg" alt="" />
+            <img src="./images/Frame 126.svg" alt="" />
+            <img src="./images/Frame 127.svg" alt="" />
+            <img src="./images/Frame 128.svg" alt="" />
+          </div>
+
+          <div
+            class="stats flex flex-col items-center gap-10 sm:flex-col md:flex-row md:gap-20 lg:gap-[40px]"
+          >
+            <div class="text-center">
+              <h1
+                class="mt-6 font-normal text-4xl sm:text-5xl md:text-6xl lg:text-[64px] leading-snug text-white font-permanent"
+              >
+                780
+              </h1>
+              <p
+                class="mt-2 sm:mt-4 md:mt-5 font-medium text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-white font-inter"
+              >
+                épisodes diffusés <br />
+                (et autant de rencontres provoquées)
+              </p>
+            </div>
+            <div class="text-center">
+              <h1
+                class="mt-6 font-normal text-4xl sm:text-5xl md:text-6xl lg:text-[64px] leading-snug text-white font-permanent"
+              >
+                4x
+              </h1>
+              <p
+                class="mt-2 sm:mt-4 md:mt-5 font-medium text-base sm:text-lg md:text-lg lg:text-lg leading-relaxed text-white font-inter"
+              >
+                plus de reach sur les réseaux (depuis le lancement de leur
+                podcast)
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row flex-wrap justify-center items-center gap-5 sm:gap-6 md:gap-8 lg:gap-[30px] mt-6"
+          >
+            <img src="./images/Frame 119 (1).svg" alt="" />
+            <img src="./images/Frame 123 (1).svg" alt="" />
+            <img src="./images/Frame 124 (1).svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
