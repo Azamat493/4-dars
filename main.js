@@ -50,4 +50,4 @@ if (son % 2 === 0) {
     console.log("Natija:", son * 3);
 } else {
     console.log("Natija:", son * 2);
-}
+} 
