@@ -1,4 +1,4 @@
-let son = Number(prompt("Sonni kiriting:"));
+/*let son = Number(prompt("Sonni kiriting:"));
 
 if (son > 0) {
     console.log("musbat");
@@ -50,4 +50,4 @@ if (son % 2 === 0) {
     console.log("Natija:", son * 3);
 } else {
     console.log("Natija:", son * 2);
-} 
+} */
